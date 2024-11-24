@@ -61,6 +61,6 @@ Here’s an overview of the key files in the project:
 
 ### Instructions:
 1. Replace `<repository-url>` with your repository link.
-2. Replace `<[insert-figma-link-here](https://www.figma.com/proto/vIrliOrxsqmYTt7EREr9BQ/the-chasers-(Community)?node-id=0-1&t=TlQ5umnShEFGrnBi-1)>` with the actual Figma link to your design.
+2. Replace `<https://www.figma.com/proto/vIrliOrxsqmYTt7EREr9BQ/the-chasers-(Community)?node-id=0-1&t=TlQ5umnShEFGrnBi-1>` with the actual Figma link to your design.
 3. Add screenshots in a `screenshots/` folder and update the file names if necessary.
 
