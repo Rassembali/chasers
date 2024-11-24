@@ -40,7 +40,7 @@ Here’s an overview of the key files in the project:
 - `tailwind.css`: Integrated Tailwind CSS framework for rapid UI development.
 
 ### Images and Icons
-- `images/logo (2).png`: Application logo.
+- `chasers/images/logo (2).png`: Application logo.
 - Icons for navigation and tools, e.g., `camera icon.png`, `roue de la sante.png`.
 
 ### APIs
