@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Freud App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .header-logo {
+      width: 32px;
+      height: 32px;
+    }
+
+    .avatar {
+      border: 2px solid #00bcd4;
+    }
+
+    .post-section p {
+      text-align: justify;
+    }
+
+    .navigation svg {
+      transition: color 0.2s ease-in-out;
+    }
+
+    .navigation svg:hover {
+      color: #00bcd4;
+    }
+
+    .navigation .active span {
+      color: #00bcd4;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- App Container -->
+  <div class="max-w-md mx-auto bg-white rounded-lg shadow-md border border-gray-200">
+
+    <!-- Top Header -->
+    <div class="flex items-center justify-between px-4 py-2 border-b">
+      <!-- Time Placeholder -->
+      <div class="flex items-center">
+        <span class="text-sm text-gray-500">9:09</span>
+      </div>
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="logo (2).png" alt="Profile Icon" class="header-logo rounded-full"> <!-- Profile Icon -->
+        <h1 class="font-bold text-lg text-gray-800">DOCTOR FREUD</h1>
+      </div>
+      <!-- Menu Icon -->
+      <a href="menu.html"> <!-- Link to your menu page -->
+        <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="px-4 py-4">
+      <h2 class="text-lg font-semibold text-gray-800">Bonjour Flen 👋</h2>
+      <p class="text-sm text-gray-600">Découvrez les publications des autres</p>
+    </div>
+
+    <!-- Avatar Row -->
+    <div class="flex overflow-x-auto px-4 space-x-4 py-2 border-b">
+      <!-- Avatars -->
+      <a href="profile1.html">
+        <img src="profile.png" alt="Avatar 1" class="avatar w-12 h-12 rounded-full"> <!-- Avatar 1 -->
+      </a>
+        <img src="av2.png" alt="Avatar 2" class="avatar w-12 h-12 rounded-full"> <!-- Avatar 2 -->
+      </a>
+        <img src="av3.png" alt="Avatar 3" class="avatar w-12 h-12 rounded-full"> <!-- Avatar 3 -->
+      </a>
+        <img src="av1.png" alt="Avatar 4" class="avatar w-12 h-12 rounded-full"> <!-- Avatar 4 -->
+      </a>
+    </div>
+
+    <!-- Post Section -->
+    <div class="px-4 py-4 post-section">
+      <!-- Post 1 -->
+      <div class="bg-gray-50 p-4 rounded-lg shadow-sm mb-4">
+        <div class="flex items-center mb-2">
+          <img src="av3.png" alt="Post Profile 1" class="w-10 h-10 rounded-full"> <!-- Post Profile 1 -->
+          <div class="ml-3">
+            <h3 class="font-semibold text-gray-800 text-sm">Hajer Haddad</h3>
+            <p class="text-xs text-gray-600">Psychologue | Spécialité en addictologie</p>
+            <p class="text-xs text-gray-500">4 min ago</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-700">
+          Soyez attentif à vos pensées et à votre dialogue intérieur. Un psychologue vous encouragerait à repérer les
+          pensées autodestructrices, et à les remplacer par des affirmations plus positives et réalistes.
+        </p>
+        <div class="flex justify-between text-gray-500 text-xs mt-3">
+          <a href="relates.html">10 relates</a>
+          <a href="comments.html">10 comments</a>
+          <a href="shared.html">2 shared</a>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+        <div class="flex items-center mb-2">
+          <img src="profile.png" alt="Post Profile 2" class="w-10 h-10 rounded-full"> <!-- Post Profile 2 -->
+          <div class="ml-3">
+            <h3 class="font-semibold text-gray-800 text-sm">Flen Ben Foulen</h3>
+            <p class="text-xs text-gray-600">Étudiante | Future pharmacienne</p>
+            <p class="text-xs text-gray-500">4 min ago</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-700">
+          Je me sens seule et j’ai un manque de confiance en soi. Quand je suis parmi les gens, je cherche la solitude,
+          et quand je suis seule, je me sens déprimée.
+        </p>
+        <div class="flex justify-between text-gray-500 text-xs mt-3">
+          <a href="relates.html">10 relates</a>
+          <a href="comments.html">10 comments</a>
+          <a href="shared.html">2 shared</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="flex justify-around items-center py-2 border-t bg-white navigation">
+      <!-- Social Link -->
+      <a href="social.html" class="flex flex-col items-center text-sm text-gray-600 active">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Social</span>
+      </a>
+      <!-- Consultation Link -->
+      <a href="consultation.html" class="flex flex-col items-center text-sm text-gray-600">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Consultation</span>
+      </a>
+      <!-- Suivi Link -->
+      <a href="suivi.html" class="flex flex-col items-center text-sm text-gray-600">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Suivi</span>
+      </a>
+      <!-- Education Link -->
+      <a href="education.html" class="flex flex-col items-center text-sm text-gray-600">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Éducation</span>
+      </a>
+      <!-- Thérapie Link -->
+      <a href="therapie.html" class="flex flex-col items-center text-sm text-gray-600">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Thérapie</span>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

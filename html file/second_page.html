@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Freud - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo (2).png" alt="Doctor Freud Logo" style="width:  220px; height: auto;">
+        </div>
+        <div class="specialty">
+            <button id="student" class="specialty-btn">Étudiant</button>
+            <button id="psychologist" class="specialty-btn">Psychologue</button>
+            <button id="others" class="specialty-btn">Autres</button>
+        </div>
+        
+        <form id="signup-form" action="profile_page.html">
+            <div class="form-group">
+                <label for="name">Nom et prénom</label>
+                <input type="text" id="name" placeholder="Flen Ben Foulen" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="flen@tunisise.tn" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" placeholder="********" required>
+            </div>
+            <a href="profile_page.html" class="btn" id="next-btn">Suivant →</a>
+        </form>
+        
+        <p class="login-link">
+            Vous avez déjà un compte ? <a href="login.html">Se connecter</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan ID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Scannez une pièce d'identité <img src="id icon.png" alt="ID Icon" style="width: 24px;"></h1>
+        <p>La carte sera utilisée uniquement pour le processus de vérification de compte et rien de plus.</p>
+
+        <div class="upload-section">
+            <!-- Upload File Section -->
+            <label for="file-upload" class="upload-box">
+                <img src="upload.png" alt="Upload Icon" style="width: 40px;">
+                <span>Choisir le dossier</span>
+                <input type="file" id="file-upload" style="display: none;" accept="image/*">
+            </label>
+
+            <!-- Open Camera Button -->
+            <button id="camera-btn" class="camera-btn">
+                <img src="camera icon.png" alt="Camera Icon" style="width: 20px;">
+                Ouvrez l'appareil photo
+            </button>
+        </div>
+
+        <!-- Next Button with href -->
+        <a id="next-btn" href="#" class="btn disabled">Suivant →</a>
+
+        <!-- Login Link -->
+        <p class="login-link">
+            Vous avez déjà un compte ? <a href="login.html">Se connecter</a>
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const fileInput = document.getElementById('file-upload');
+            const nextButton = document.getElementById('next-btn');
+
+            // Enable Next Button After File Selection
+            fileInput.addEventListener('change', () => {
+                if (fileInput.files.length > 0) {
+                    alert(`Fichier sélectionné: ${fileInput.files[0].name}`);
+                    nextButton.classList.remove('disabled');
+                    nextButton.setAttribute('href', 'confirmation.html'); // Set the href to confirmation.html
+                }
+            });
+        });
+    </script>
+</body>
+</html>

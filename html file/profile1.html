@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .nav-item.active svg,
+    .nav-item.active span {
+      color: #00bcd4;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- App Container -->
+  <div class="max-w-md mx-auto bg-white rounded-lg shadow-md border border-gray-200">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between px-4 py-2 border-b">
+      <!-- Back Button -->
+      <div>
+        <a href="social.html">
+          <svg class="w-6 h-6 text-gray-600 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </a>
+      </div>
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="logo (2).png" alt="App Logo" class="w-8 h-8 rounded-full">
+        <h1 class="font-bold text-lg text-gray-800">DOCTOR FREUD</h1>
+      </div>
+      <!-- Notifications and Menu -->
+      <div class="flex space-x-4">
+        <a href="notifications.html">
+          <svg class="w-6 h-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M15 19l-7-7 7-7" />
+          </svg>
+        </a>
+        <a href="menu.html">
+          <svg class="w-6 h-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Profile Info Section -->
+    <div class="px-4 py-4">
+      <div class="flex items-center">
+        <img src="profile.png" alt="Profile Picture" class="w-20 h-20 rounded-full border-2 border-blue-500">
+        <div class="ml-4">
+          <h2 class="font-bold text-xl text-gray-800">Flen Ben Foulen 👩‍⚕️</h2>
+          <p class="text-sm text-gray-500">@flenbenfoulen <span class="text-blue-500 font-semibold">54K followers</span></p>
+          <button class="text-blue-500 text-xs underline">Exprimer votre humeur</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bio Section -->
+    <div class="px-4 py-2">
+      <h3 class="font-semibold text-gray-800 text-sm">Bio</h3>
+      <p class="text-sm text-gray-600">Coucou ! Je suis Flen, étudiant en ingénierie et passionné de développement
+        personnel.</p>
+    </div>
+
+    <!-- Objectives and Ambitions -->
+    <div class="px-4 py-2">
+      <!-- Objectives -->
+      <div class="bg-white p-4 rounded-lg shadow-sm mb-4">
+        <h4 class="font-semibold text-sm text-gray-800 flex items-center">
+          <svg class="w-5 h-5 text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          Objectifs
+        </h4>
+        <ul class="list-disc list-inside text-sm text-gray-600 mt-2">
+          <li>Être en bonne santé</li>
+          <li>Surmonter les crises d'angoisses</li>
+          <li>Obtenir mon diplôme avec succès</li>
+        </ul>
+      </div>
+
+      <!-- Ambitions -->
+      <div class="bg-white p-4 rounded-lg shadow-sm">
+        <h4 class="font-semibold text-sm text-gray-800 flex items-center">
+          <svg class="w-5 h-5 text-yellow-500 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          Ambitions
+        </h4>
+        <ul class="list-disc list-inside text-sm text-gray-600 mt-2">
+          <li>Travailler sur moi-même</li>
+          <li>Faire le tour du monde</li>
+          <li>Acquérir des nouvelles compétences</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Activity Section -->
+    <div class="px-4 py-2">
+      <h3 class="font-semibold text-gray-800 text-sm">Activité récente</h3>
+      <!-- Activity Post -->
+      <div class="bg-gray-50 p-4 rounded-lg shadow-sm mt-2">
+        <div class="flex items-center mb-2">
+          <img src="av2.png" alt="Profile" class="w-10 h-10 rounded-full">
+          <div class="ml-3">
+            <h3 class="font-semibold text-gray-800 text-sm">Imam Farrhouk</h3>
+            <p class="text-xs text-gray-600">4 min ago</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-700">
+          Je me sens seule et j’ai un manque de confiance en soi. Quand je suis parmi les gens, je cherche la solitude,
+          et quand je suis seule, je me sens déprimée.
+        </p>
+        <div class="flex justify-between text-gray-500 text-xs mt-3">
+          <span>10 relates</span>
+          <span>10 comments</span>
+          <span>2 shared</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="flex justify-around items-center py-2 border-t bg-white">
+      <!-- Navigation Items -->
+      <a href="social.html" class="flex flex-col items-center text-sm text-gray-600 nav-item active">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Social</span>
+      </a>
+      <a href="consultation.html" class="flex flex-col items-center text-sm text-gray-600 nav-item">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Consultation</span>
+      </a>
+      <a href="suivi.html" class="flex flex-col items-center text-sm text-gray-600 nav-item">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Suivi</span>
+      </a>
+      <a href="education.html" class="flex flex-col items-center text-sm text-gray-600 nav-item">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Éducation</span>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

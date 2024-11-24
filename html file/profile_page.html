@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Freud - Complete Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo (2).png" alt="Doctor Freud Logo" style="width:  220px; height: auto;">
+        </div>
+        <p class="subtitle">Complétez votre profil</p>
+        <p class="instructions">Veuillez remplir le formulaire ci-dessous</p>
+        
+        <form id="profile-form">
+            <div class="form-group">
+                <label for="username">Pseudo</label>
+                <input type="text" id="username" placeholder="Flen2000" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Genre</label>
+                <input type="text" id="gender" placeholder="Homme" required>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Date de Naissance</label>
+                <input type="date" id="birthdate" required>
+            </div>
+            <div class="form-group terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">En créant un compte, vous acceptez nos <a href="#" target="_blank">Conditions Générales d'Utilisation</a></label>
+            </div>
+            <!-- Suivant Button -->
+            <button type="button" id="next-btn" class="btn">Suivant →</button>
+        </form>
+        
+        <p class="login-link">
+            Vous avez déjà un compte ? <a href="login.html">Se connecter</a>
+        </p>
+    </div>
+    <script>
+        // Add behavior for the Suivant button to redirect to ID Verification page
+        document.getElementById('next-btn').addEventListener('click', function () {
+            // Validate terms checkbox is checked before redirecting
+            const termsCheckbox = document.getElementById('terms');
+            if (!termsCheckbox.checked) {
+                alert('Vous devez accepter les Conditions Générales d\'Utilisation pour continuer.');
+                return;
+            }
+
+            // Redirect to ID verification page
+            window.location.href = 'id_verification.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo img {
+    width: 100px; /* Adjust size based on your logo image */
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #000;
+}
+
+.btn {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #008c9e;
+}
+/* Specialty Buttons */
+.specialty {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.specialty-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.specialty-btn.active {
+    background-color: #ffd700;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+/* Specialty Buttons */
+/* Specialty Buttons Default State */
+.specialty-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #f1f1f1; /* Gray background */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Specialty Buttons Hover State */
+.specialty-btn:hover {
+    background-color: #e0e0e0; /* Slightly darker gray */
+}
+
+/* Specialty Buttons Active State */
+.specialty-btn.active {
+    background-color: #ffd700; /* Yellow background for active button */
+    color: #000; /* Black text for active button */
+    font-weight: bold;
+}
+/* Subtitle */
+.subtitle {
+    font-size: 20px;
+    color: #00bcd4;
+    margin-top: 10px;
+}
+
+/* Instructions */
+.instructions {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.terms a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+/* Upload Section Styles */
+.upload-section {
+    margin: 20px 0;
+}
+
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #00bcd4;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.upload-box img {
+    margin-bottom: 10px;
+}
+
+.upload-box span {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Camera Button */
+.camera-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.camera-btn img {
+    margin-right: 5px;
+}
+
+.camera-btn:hover {
+    background-color: #008c9e;
+}
+
+/* Next Button */
+.btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+/* General Styles for Confirmation Page */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    margin-bottom: 20px;
+}
+
+.confirmation-icon img {
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 22px;
+    color: #003366; /* Dark blue */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #555; /* Gray */
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00bcd4; /* Blue */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #008c9e; /* Darker blue */
+}
+
+/* Disabled Button Style */
+.btn.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    pointer-events: none;
+}/* General Styles */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo-section .app-logo {
+    height: 60px;
+    width: auto;
+}
+
+.profile-section .profile-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+/* Story Section */
+.story-section {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.stories {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.story {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.story img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.story span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/* Feed Section */
+.feed {
+    padding: 10px 20px;
+}
+
+.post {
+    background-color: #fff;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.post-content {
+    margin: 10px 0;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav-item.active {
+    font-weight: bold;
+    color: #0056b3;
+}

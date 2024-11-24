@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .nav-item.active span,
+    .nav-item.active svg {
+      color: #00bcd4;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- App Container -->
+  <div class="max-w-md mx-auto bg-white rounded-lg shadow-md border border-gray-200">
+
+    <!-- Header Section -->
+    <div class="flex items-center justify-between px-4 py-2 border-b">
+      <!-- Back Button -->
+      <div class="flex items-center">
+        <a href="social.html">
+          <svg class="w-6 h-6 text-gray-600 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </a>
+        <span class="ml-2 font-medium text-gray-700">Quiz</span>
+      </div>
+
+      <!-- Notifications and Menu -->
+      <div class="flex space-x-4">
+        <a href="notifications.html">
+          <svg class="w-6 h-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 10h16m-7 4H3" />
+          </svg>
+        </a>
+        <a href="menu.html">
+          <svg class="w-6 h-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div class="px-4 py-4 space-y-6">
+
+      <!-- Question 1 -->
+      <div>
+        <h3 class="font-medium text-gray-700">Pourquoi voulez-vous consulter un psychologue ?</h3>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-600">Dépression</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-500 text-white">Anxiété</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-600">Traumatisme</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-600">Stress</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-600">Autres</button>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div>
+        <h3 class="font-medium text-gray-700">Qu’attendez-vous de votre thérapeute ?</h3>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-600">Écouter</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-500 text-white">Conseiller</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-600">Prescrire</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-500 text-white">Suivre</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-600">Autres</button>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div>
+        <h3 class="font-medium text-gray-700">Quelle est votre méthode de consultation préférée ?</h3>
+        <div class="mt-2 space-y-2">
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="form-checkbox text-blue-500">
+            <span class="text-sm text-gray-600">Chat</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="form-checkbox text-blue-500" checked>
+            <span class="text-sm text-gray-600">Vidéo</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" class="form-checkbox text-blue-500">
+            <span class="text-sm text-gray-600">Audio</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div>
+        <h3 class="font-medium text-gray-700">Quelle est votre thérapie préférée ?</h3>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-600">De groupe</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-500 text-white">De plante</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-600">Musicothérapie</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-600">Jeux</button>
+          <button class="px-3 py-1 text-sm rounded-full bg-blue-100 text-blue-600">Autres</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Suivant Button -->
+    <div class="px-4 py-4 text-center">
+      <a href="recommandedD.html" class="bg-blue-500 text-white font-medium py-2 px-6 rounded-lg hover:bg-blue-600 transition">
+        Suivant →
+      </a>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="flex justify-around items-center py-2 border-t bg-white">
+      <!-- Social Link -->
+      <a href="social.html" class="flex flex-col items-center text-sm text-gray-600 nav-item">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Social</span>
+      </a>
+
+      <!-- Consultation Link -->
+      <a href="consultation.html" class="flex flex-col items-center text-sm text-blue-500 nav-item active">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Consultation</span>
+      </a>
+
+      <!-- Suivi Link -->
+      <a href="suivi.html" class="flex flex-col items-center text-sm text-gray-600 nav-item">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Suivi</span>
+      </a>
+
+      <!-- Education Link -->
+      <a href="education.html" class="flex flex-col items-center text-sm text-gray-600 nav-item">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Éducation</span>
+      </a>
+
+      <!-- Therapy Link -->
+      <a href="therapy.html" class="flex flex-col items-center text-sm text-gray-600 nav-item">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 10h11m10 0h-1m-10 4h11m0-4h1m-11 4H3" />
+        </svg>
+        <span>Thérapie</span>
+      </a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
